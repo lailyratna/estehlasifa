@@ -1,0 +1,201 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff7e5f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ff7e5f;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ff7e5f;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    background: #ffe0b5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background: #fbd1a2;
+}
+
+/* Mengatur ukuran gambar di beranda dan profil */
+.header-image, .profile-image {
+    width: 40%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ff7e5f;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: #ff9a76;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff5e6;
+}
+
+.product-image {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #ff7e5f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff9a76;
+}
+
+footer {
+    background-color: #ff7e5f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-image, .profile-image {
+        width: 60%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    table, th, td {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+    }
+
+    .header-image, .profile-image {
+        width: 80%;
+    }
+
+    input, textarea {
+        font-size: 0.9em;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+    }
+}
